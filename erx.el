@@ -126,8 +126,8 @@ rx-exp) is taken into account in order to maintain order."
 (cl-defmacro erx-loop (&key rx do narrow buffer file )
   "Execute `re-search-forward' in loop against regex obtained from
 `RX' in current buffer, `BUFFER' or `FILE', narrowed to region
-`IN' if not nil. Then, for each match, narrows to match and
-executes `BODY' with local bindings defined in `RX'. An `RX'
+`NARROW' if not nil. Then, for each match, narrows to match and
+executes `DO' with local bindings defined in `RX'. An `RX'
 expression of the form (let NAME ...) binds the symbol NAME to
 the region where the submatch happens and the symbol *NAME to the
 contents of that region, as a string."
