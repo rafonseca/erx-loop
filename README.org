@@ -1,0 +1,4 @@
+* Introduction
+This package is the evolution of some scripts I've used to refactor an extensive Python code base. Nowadays, I would use tree-sitter for a similar task. Making nested loops over regular expression matches is very powerful, but it is not a real parser. On the other side, there are many situations where a parser is unavailable. Then I hope this package can be of help. 
+
+
